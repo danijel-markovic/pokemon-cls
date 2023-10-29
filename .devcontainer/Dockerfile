@@ -1,6 +1,7 @@
 # Use the official Python 3.10 image as the base image
-FROM python:3.10-slim
+FROM python:3.10
 
+RUN apt-get update
 # Set the working directory to /app
 WORKDIR /app
 
@@ -10,5 +11,4 @@ COPY . /app
 # Install the dependencies from the requirements.txt file
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Optional: Specify the command to run your application
-# CMD ["python", "your_script.py"]
+
