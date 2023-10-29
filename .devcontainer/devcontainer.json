@@ -17,8 +17,7 @@
                 "python.formatting.provider": "black",
                 "python.linting.mypyEnabled": true,
                 "python.linting.enabled": true,
-                "ms-toolsai.jupyter"
             }
         }
-    },
+    }
 }
